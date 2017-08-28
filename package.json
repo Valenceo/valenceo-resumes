@@ -1,0 +1,17 @@
+{
+  "homepage": "https://www.valenceo.com/",
+  "name": "valenceo-resumes",
+  "version": "2017.08.28-alpha.1",
+  "description": "Valenceo, LTD. staff resumes (public)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valenceo/resumes"
+  },
+  "dependencies": {
+    "hackmyresume": "^1.8.0"
+  },
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/valenceo/resumes/issues"
+  }
+}
