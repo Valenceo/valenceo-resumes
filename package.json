@@ -8,7 +8,10 @@
     "url": "git+https://github.com/valenceo/resumes"
   },
   "dependencies": {
-    "hackmyresume": "^1.8.0"
+    "hackmyresume": "github:hacksalot/hackmyresume#dev",
+    "jsonresume-theme-kendall": "github:linuxbozo/jsonresume-theme-kendall",
+    "jsonresume-theme-onepage": "github:ainsleyc/jsonresume-theme-onepage",
+    "jsonresume-theme-spartan": "^0.2.1"
   },
   "devDependencies": {},
   "bugs": {

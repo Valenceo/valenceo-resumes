@@ -1,0 +1,9 @@
+{
+  // Set the default theme to "compact"
+  "theme": "compact",
+  // Change the "employment" section title text to "Work"
+  "sectionTitles": {
+    "work": "Professional Experience",
+    "publications": "Professional Publications"
+  }
+}

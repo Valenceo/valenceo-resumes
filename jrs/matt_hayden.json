@@ -1,0 +1,363 @@
+{
+  "basics": {
+    "name": "Matt Hayden",
+    "label": "Scientific Programmer II and Data Omnivore",
+    "picture": "",
+    "email": "Matt.Hayden@Valenceo.com",
+    "phone": "(720) 239-2327",
+    "website": "http://chat.valenceo.com",
+    "summary": "Educated mathematics and engineering professional with experience providing support for key organizational goals and objectives.  Unique in the ability to combine an educational background in mathematics with engineering best practices and principles to produce results that exceed both internal and external business partner expectations.  Proven strength building strong relationships with business partners, based on open lines of communication and used to draw alignment with key programming initiatives.  Able to take obtained data and enhance its usability.  Recognized for the ability to deliver strong results working in fast-paced, dynamic work environments.",
+    "location": {
+      "postalCode": "80302",
+      "city": "Boulder",
+      "countryCode": "US",
+      "region": "Colorado"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "matt-hayden",
+        "url": "https://github.com/matt-hayden"
+      },
+      {
+        "network": "gitter.im",
+        "username": "matt-hayden",
+        "url": "https://gitter.im/Valenceo/Lobby"
+      },
+      {
+        "network": "keybase",
+        "username": "matt-hayden",
+        "url": "https://keybase.io/matt-hayden"
+      },
+      {
+        "network": "linkedin",
+        "username": "matt-hayden",
+        "url": "https://linkedin.com/in/matt-hayden"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Valenceo, LTD.",
+      "position": "Consultant",
+      "website": "https://blog.valenceo.com",
+      "startDate": "2016-03-30",
+      "summary": "Founder and developer. Provide remote consulting services on analytical, statistical and crypto backends",
+      "highlights": [
+        "Automated cloud-based backup and VPN services.",
+        "Moved machine learning categorization and classification, and reporting, to an API model",
+        "Moved disparate legacy datasets into a unified longitudinal database",
+        "Modern source control and BI workflow automation across a geographically remote workforce"
+      ]
+    },
+    {
+      "company": "Aquacraft, Inc.",
+      "position": "Engineer and VP",
+      "website": "http://www.aquacraft.com",
+      "startDate": "2006-08-26",
+      "endDate": "2015-10-15",
+      "summary": "Brought modern tooling and scaling to a niche startup",
+      "highlights": [
+        "Held a key role within the organization as the main database designer for a company that specializes in statistical modeling within the utility sector.",
+        "Successfully automated data mining algorithms related to report writing and longitudinal analysis.",
+        "Developed a comprehensive understanding of all stages of data acquisition from hardware to software to the finished product.",
+        "Maintained open lines of communication between the client and management, needed to keep projected on track in terms of schedule.",
+        "Effectively scaled the company's handling of data by 100-times while lowering the budgets for both hardware and software.",
+        "Took the initiative to successfully build out a database and file servers needed to meet new computing demands.",
+        "Leveraged higher math and statistics in a research setting with coworkers from varied backgrounds."
+      ],
+      "projects": [
+        {
+          "name": "Research and Statistical modeling",
+          "languages": [
+            "C",
+            "Python",
+            "SPSS"
+          ],
+          "tools": [
+            "ANOVA",
+            "ArcGIS",
+            "gdb",
+            "Imagery Analysis",
+            "make",
+            "Multiple Regression",
+            "Monte Carlo",
+            "MS Access",
+            "MS Office",
+            "Naive Bayes",
+            "Remote Sensing",
+            "Spectral Imaging",
+            "SPSS"
+          ],
+          "capacities": [
+            "Analyst",
+            "Research Methods",
+            "Study Design"
+          ]
+        },
+        {
+          "name": "Trace Wizard back-end",
+          "languages": [
+            "awk",
+            "JavaScript",
+            "Python",
+            "sed",
+            "SQL",
+            "VBA"
+          ],
+          "tools": [
+            "Excel",
+            "HDF5",
+            "MS Access",
+            "MSSQL server",
+            "MySQL",
+            "numpy",
+            "OLAP",
+            "ORM",
+            "RAID"
+          ],
+          "capacities": [
+            "Architect",
+            "Developer",
+            "Information Technology",
+            "System Administrator"
+          ]
+        },
+        {
+          "name": "Trace Wizard 5 front-end",
+          "startDate": "2012",
+          "languages": [
+            "C#",
+            "VB6",
+            "WiX"
+          ],
+          "tools": [
+            "Computer Vision",
+            "git",
+            "Internationalization",
+            "License Management",
+            "Supervised Machine Learning",
+            "Visual Studio",
+            "WiX installer"
+          ],
+          "capacities": [
+            "Architect",
+            "Developer",
+            "Sales and Training"
+          ]
+        },
+        {
+          "name": "Data Logging",
+          "tools": [
+            "AEGIS",
+            "Brainard MeterMaster",
+            "Circuit Analysis",
+            "Cooling Tower Chemistry",
+            "HOBO",
+            "Transducer Measurement and Control",
+            "SMS"
+          ],
+          "capacities": [
+            "Field Engineer"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "EngineLab",
+      "position": "Engineer",
+      "website": "http://www.enginelab.net",
+      "startDate": "2015-07",
+      "endDate": "2015-07",
+      "summary": "Worked with very high-performance engines at the hardware level",
+      "highlights": [
+        "EngineLab produces high-end engine controllers for performance racing",
+        "Worked as a consulting programmer on a dream project"
+      ],
+      "projects": [
+        {
+          "name": "ELC mobile dashboard",
+          "languages": [
+            "C",
+            "C++",
+            "Python"
+          ],
+          "tools": [
+            "Qt5 mobile",
+            "Subversion",
+            "Visual Studio"
+          ],
+          "capacities": [
+            "Programmer"
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Colorado",
+      "area": "Computer Science",
+      "studyType": "Master Student",
+      "startDate": "2009-08",
+      "endDate": "2010-12",
+      "gpa": "4.0",
+      "courses": [
+        "Algorithms (upper-level)", "Database Systems 1 and 2 (upper-level)"
+      ]
+    },
+    {
+      "institution": "University of Colorado",
+      "area": "Applied Math / Environmental Biology",
+      "studyType": "Bachelor of Science",
+      "startDate": "1998-08",
+      "endDate": "2002-08",
+      "gpa": "Dean's List",
+      "courses": [
+        "Mathematical Statistics 1 and 2", "Population Dynamics", "Dynamical Systems", "Microbiology"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Advanced",
+      "keywords": [
+        "bash",
+        "C",
+        "C++",
+        "JavaScript ES6",
+        "Python",
+        "R",
+        "SPSS"
+      ]
+    },
+    {
+      "name": "Open-Source Development",
+      "level": "Advanced",
+      "keywords": [
+        "gdb",
+        "git",
+        "GNU",
+        "Linux kernel",
+        "make"
+      ]
+    },
+    {
+      "name": "Data Mining",
+      "level": "Advanced",
+      "keywords": [
+        "Machine Learning",
+        "Expert Systems",
+        "SPSS",
+        "Python",
+        "R"
+      ]
+    },
+    {
+      "name": "Python internist",
+      "level": "Advanced",
+      "keywords": [
+        "C-API",
+        "JetBrains PyCharm",
+        "multi-platform",
+        "Numerical Python",
+        "numpy",
+        "panel data"
+      ]
+    },
+    {
+      "name": "Hydrological and Natural Resource Analysis",
+      "level": "Advanced",
+      "keywords": [
+        "Atmospheric Sciences",
+        "Automated Reporting",
+        "Demand Projection",
+        "Monte Carlo Simulation",
+        "Remote Sensing",
+        "Statistical Modeling"
+      ]
+    },
+    {
+      "name": "node.js Contributor",
+      "level": "Beginner",
+      "keywords": [
+        "async",
+        "express",
+        "Nuxt",
+        "Vue"
+      ]
+    },
+    {
+      "name": "Visual Studio",
+      "level": "Beginner",
+      "keywords": [
+        "VS2005",
+        "VS2010"
+      ]
+    },
+    {
+      "name": "System Administration",
+      "level": "Master",
+      "keywords": [
+        "apache",
+        "awk",
+        "AWS",
+        "Debian",
+        "FreeBSD",
+        "gdb",
+        "Google Cloud Services",
+        "Linux",
+        "make",
+        "nagios",
+        "nmap",
+        "openssl",
+        "pfsense",
+        "Public-key cryptosystems",
+        "RAID",
+        "Regular expressions",
+        "sed",
+        "SSH",
+        "stow",
+        "tripwire",
+        "vi",
+        "zfs"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "name": "Residential End Uses of Water, Version 2 - 4309",
+      "publisher": "Water Research Foundation",
+      "releaseDate": "2016-04-07",
+      "website": "http://www.waterrf.org/Pages/Projects.aspx?PID=4309",
+      "summary": "I was in charge of the statistics and survey analysis for this intensive description of water use across the USA and Canada."
+    },
+    {
+      "name": "Effects of groundwater flux on open-channel estimates of stream metabolism.",
+      "authors": "McCutchan, J. H., James F. Saunders, William M. Lewis, & Matthew G. Hayden.",
+      "publisher": "Journal of Limnology & Oceanography",
+      "releaseDate": "2002-01-15",
+      "volume": "47(1)",
+      "pages": "321-324",
+      "DOI": "10.4319/lo.2002.47.1.0321",
+      "website": "http://cires.colorado.edu/limnology/sites/default/files/pubs/Pub148.pdf",
+      "summary": "Contributed PDE modeling to the development of a mass-balance system of equations"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Amateur Radio",
+      "callsign": "N0VUM"
+    },
+    {
+      "name": "Probability Theory"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ]
+}
