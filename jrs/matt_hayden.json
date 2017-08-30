@@ -2,10 +2,11 @@
   "basics": {
     "name": "Matt Hayden",
     "label": "Scientific Programmer II and Data Omnivore",
-    "picture": "",
+	"degree": "Engineering Bachelor of Science",
+    "picture": "face.jpg",
     "email": "Matt.Hayden@Valenceo.com",
     "phone": "(720) 239-2327",
-    "website": "http://chat.valenceo.com",
+    "website": "http://resumes.valenceo.com/matt_hayden",
     "summary": "Educated mathematics and engineering professional with experience providing support for key organizational goals and objectives.  Unique in the ability to combine an educational background in mathematics with engineering best practices and principles to produce results that exceed both internal and external business partner expectations.  Proven strength building strong relationships with business partners, based on open lines of communication and used to draw alignment with key programming initiatives.  Able to take obtained data and enhance its usability.  Recognized for the ability to deliver strong results working in fast-paced, dynamic work environments.",
     "location": {
       "postalCode": "80302",
@@ -40,7 +41,7 @@
     {
       "company": "Valenceo, LTD.",
       "position": "Consultant",
-      "website": "https://blog.valenceo.com",
+      "website": "https://www.valenceo.com",
       "startDate": "2016-03-30",
       "summary": "Founder and developer. Provide remote consulting services on analytical, statistical and crypto backends",
       "highlights": [
@@ -118,8 +119,11 @@
           ],
           "capacities": [
             "Architect",
+            "Database Administrator",
+            "Database Migration",
             "Developer",
             "Information Technology",
+            "Integration with Client Systems",
             "System Administrator"
           ]
         },
@@ -199,6 +203,7 @@
       "institution": "University of Colorado",
       "area": "Computer Science",
       "studyType": "Master Student",
+	  "website": "http://cs.colorado.edu",
       "startDate": "2009-08",
       "endDate": "2010-12",
       "gpa": "4.0",
@@ -208,13 +213,14 @@
     },
     {
       "institution": "University of Colorado",
-      "area": "Applied Math / Environmental Biology",
+      "area": "Applied Math | minor: Environmental Biology",
       "studyType": "Bachelor of Science",
+	  "website": "http://amath.colorado.edu",
       "startDate": "1998-08",
       "endDate": "2002-08",
       "gpa": "Dean's List",
       "courses": [
-        "Mathematical Statistics 1 and 2", "Population Dynamics", "Dynamical Systems", "Microbiology"
+        "Numerical Analysis", "Mathematical Statistics 1 and 2", "Population Dynamics", "Dynamical Systems", "Microbiology"
       ]
     }
   ],
@@ -227,16 +233,15 @@
         "C",
         "C++",
         "JavaScript ES6",
-        "Python",
-        "R",
-        "SPSS"
+        "Python"
       ]
     },
     {
       "name": "Open-Source Development",
       "level": "Advanced",
       "keywords": [
-        "gdb",
+        "GCC and extensions",
+        "GDB",
         "git",
         "GNU",
         "Linux kernel",
@@ -255,6 +260,18 @@
       ]
     },
     {
+      "name": "Database Administration",
+      "level": "Mixed",
+      "keywords": [
+        "Custom ORM",
+        "SQL",
+        "Mobile Sqlite",
+        "MSSQL",
+        "MySQL",
+        "NoSQL and Document Stores"
+      ]
+    },
+    {
       "name": "Python internist",
       "level": "Advanced",
       "keywords": [
@@ -262,8 +279,7 @@
         "JetBrains PyCharm",
         "multi-platform",
         "Numerical Python",
-        "numpy",
-        "panel data"
+        "numpy"
       ]
     },
     {
@@ -278,6 +294,41 @@
         "Statistical Modeling"
       ]
     },
+    { "name": "DevOps",
+      "level": "Mixed",
+      "keywords": [
+        "AWS S3, EC2, Lambda and Lambda@EDGE",
+        "CoreOS",
+        "Docker",
+        "Google Cloud Compute, Kubernetes, Storage and Domains",
+        "VMware ESXi"
+      ]},
+    { "name": "System Administration",
+      "level": "Master",
+      "keywords": [
+        "apache",
+        "awk",
+        "Debian and Ubuntu, apt",
+        "GnuPG",
+        "Linux",
+        "make",
+        "Nagios",
+        "nmap",
+        "openssl",
+        "OpenVPN",
+        "pfsense, FreeBSD and FreeNAS",
+        "Public-key cryptosystems",
+        "RAID",
+        "Regular expressions",
+        "RHEL, Redhat and Fedora, dnf",
+        "sed",
+        "SSH",
+        "stow",
+        "tripwire",
+        "vi",
+        "Wireshark",
+        "zfs"
+      ] },
     {
       "name": "node.js Contributor",
       "level": "Beginner",
@@ -294,34 +345,6 @@
       "keywords": [
         "VS2005",
         "VS2010"
-      ]
-    },
-    {
-      "name": "System Administration",
-      "level": "Master",
-      "keywords": [
-        "apache",
-        "awk",
-        "AWS",
-        "Debian",
-        "FreeBSD",
-        "gdb",
-        "Google Cloud Services",
-        "Linux",
-        "make",
-        "nagios",
-        "nmap",
-        "openssl",
-        "pfsense",
-        "Public-key cryptosystems",
-        "RAID",
-        "Regular expressions",
-        "sed",
-        "SSH",
-        "stow",
-        "tripwire",
-        "vi",
-        "zfs"
       ]
     }
   ],
