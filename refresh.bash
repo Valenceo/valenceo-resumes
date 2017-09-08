@@ -5,11 +5,8 @@ function acl_is_world_readable() {
   jq -e '.[]? | select(.entity=="allUsers") | select(.role=="READER") | any'
 }
 
-# If hosting straight out of a bucket, remember to configure:
-#   gsutil web set -im index.html
-site=resumes.valenceo.com
-
-for name in matt_hayden
+source refresh.config
+for name in $names
 do
   theme=node_modules/jsonresume-theme-kendall
   hackmyresume BUILD jrs/${name}.json TO ${site}/${name}/index.html --theme ${theme}
