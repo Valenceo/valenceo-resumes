@@ -159,6 +159,7 @@
             "Cooling Tower Chemistry",
             "HOBO",
             "Transducer Measurement and Control",
+            "TCP/IP",
             "SMS"
           ],
           "capacities": [
@@ -225,6 +226,20 @@
     }
   ],
   "skills": [
+    {
+      "name": "Network Architect",
+      "level": "Advanced",
+      "keywords": [
+        "Nagios",
+        "nmap",
+        "OpenVPN",
+        "pfsense, FreeBSD and FreeNAS",
+        "Public-key cryptosystems",
+        "stateful firewalls, iptables, pf",
+        "TCP/IP",
+        "Wireshark"
+      ]
+    },
     {
       "name": "Programming Languages",
       "level": "Advanced",
