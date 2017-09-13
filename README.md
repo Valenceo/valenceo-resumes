@@ -4,19 +4,20 @@ This is for public-facing resumes related to the consulting firm Valenceo LTD.
 Feel free to re-use the machinery to post your own resume(s). I stand on the
 shoulders of others, like hackmyresume and the Kendall theme.
 
-Installation:
+## Installation
 
 1. npm install
 1. ./refresh.bash
 
-Suggested system packages for Google Cloud buckets:
+#### Suggested system packages for Google Cloud buckets
 
 1. jq
 
-Suggested packages for PDF output:
+## Suggested packages for PDF output
 
 1. pandoc,texlive-latex-recommended
 1. wkhtmltopdf or phantomjs
+
 
 TODO:
 
