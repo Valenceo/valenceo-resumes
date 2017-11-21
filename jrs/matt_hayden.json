@@ -27,8 +27,8 @@
       },
       {
         "network": "keybase",
-        "username": "matt-hayden",
-        "url": "https://keybase.io/matt-hayden"
+        "username": "matt_hayden",
+        "url": "https://keybase.io/matt_hayden"
       },
       {
         "network": "linkedin",
@@ -270,6 +270,7 @@
         "Machine Learning",
         "Expert Systems",
         "SPSS",
+        "pandas / matplotlib / scipy",
         "Python",
         "R"
       ]
