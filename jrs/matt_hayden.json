@@ -313,11 +313,10 @@
     { "name": "DevOps",
       "level": "Mixed",
       "keywords": [
+        "Virtualization",
         "AWS S3, EC2, Lambda and Lambda@EDGE",
         "CoreOS",
-        "Docker",
-        "Google Cloud Compute, Kubernetes, Storage and Domains",
-        "VMware ESXi"
+        "Google Cloud Compute, Storage and Domains"
       ]},
     { "name": "System Administration",
       "level": "Master",

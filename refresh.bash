@@ -23,10 +23,6 @@ do
   then
     echo DOC
   fi
-  if hackmyresume BUILD jrs/${name}.json TO ${dest}/${name}/${name}.pdf -p wkhtmltopdf --theme ${theme}
-  then
-    echo PDF
-  fi
 done
 
 read -p "Push to server [YyNn]> "
