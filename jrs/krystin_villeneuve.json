@@ -1,0 +1,375 @@
+{
+  "basics": {
+    "name": "Krystin Villeneuve",
+    "label": "Software Engineer",
+    "picture": "face.jpg",
+    "email": "krystinv@gmail.com",
+    "phone": "(720) 396-4776",
+    "website": "http://krystinv.com",
+    "summary": "With over 15 years of experience in technology, management, and customer service - I am interested in innovative projects and companies. I learned to code through a combination of free online resources, in class training, meetups, and paid apprenticeship. I endeavor to learn and grow in my career every day.",
+    "location": {
+      "postalCode": "80301",
+      "city": "Boulder",
+      "countryCode": "US",
+      "region": "Colorado"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "krystin987",
+        "url": "https://github.com/krystin987"
+      },
+      {
+        "network": "keybase",
+        "username": "krystinv",
+        "url": "https://keybase.io/krystinv"
+      },
+      {
+        "network": "linkedin",
+        "username": "krystinv",
+        "url": "https://www.linkedin.com/in/krystin-v-a24a6659"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Techtonic, Inc.",
+      "position": "Consultant",
+      "website": "https://www.techtonic.com",
+      "startDate": "2016-03-30",
+      "summary": "Founder and developer. Provide remote consulting services on analytical, statistical and crypto backends",
+      "highlights": [
+        "Automated cloud-based backup and VPN services.",
+        "Moved machine learning categorization and classification, and reporting, to an API model",
+        "Moved disparate legacy datasets into a unified longitudinal database",
+        "Modern source control and BI workflow automation across a geographically remote workforce"
+      ]
+    },
+    {
+      "company": "Aquacraft, Inc.",
+      "position": "Engineer and VP",
+      "website": "http://www.aquacraft.com",
+      "startDate": "2006-08-26",
+      "endDate": "2015-10-15",
+      "summary": "Brought modern tooling and scaling to a niche startup",
+      "highlights": [
+        "Held a key role within the organization as the main database designer for a company that specializes in statistical modeling within the utility sector.",
+        "Successfully automated data mining algorithms related to report writing and longitudinal analysis.",
+        "Developed a comprehensive understanding of all stages of data acquisition from hardware to software to the finished product.",
+        "Maintained open lines of communication between the client and management, needed to keep projected on track in terms of schedule.",
+        "Effectively scaled the company's handling of data by 100-times while lowering the budgets for both hardware and software.",
+        "Took the initiative to successfully build out a database and file servers needed to meet new computing demands.",
+        "Leveraged higher math and statistics in a research setting with coworkers from varied backgrounds."
+      ],
+      "projects": [
+        {
+          "name": "Research and Statistical modeling",
+          "languages": [
+            "C",
+            "Python",
+            "SPSS"
+          ],
+          "tools": [
+            "ANOVA",
+            "ArcGIS",
+            "gdb",
+            "Imagery Analysis",
+            "make",
+            "Multiple Regression",
+            "Monte Carlo",
+            "MS Access",
+            "MS Office",
+            "Naive Bayes",
+            "Remote Sensing",
+            "Spectral Imaging",
+            "SPSS"
+          ],
+          "capacities": [
+            "Analyst",
+            "Research Methods",
+            "Study Design"
+          ]
+        },
+        {
+          "name": "Trace Wizard back-end",
+          "languages": [
+            "awk",
+            "JavaScript",
+            "Python",
+            "sed",
+            "SQL",
+            "VBA"
+          ],
+          "tools": [
+            "Excel",
+            "HDF5",
+            "MS Access",
+            "MSSQL server",
+            "MySQL",
+            "numpy",
+            "OLAP",
+            "ORM",
+            "RAID"
+          ],
+          "capacities": [
+            "Architect",
+            "Database Administrator",
+            "Database Migration",
+            "Developer",
+            "Information Technology",
+            "Integration with Client Systems",
+            "System Administrator"
+          ]
+        },
+        {
+          "name": "Trace Wizard 5 front-end",
+          "startDate": "2012",
+          "languages": [
+            "C#",
+            "VB6",
+            "WiX"
+          ],
+          "tools": [
+            "Computer Vision",
+            "git",
+            "Internationalization",
+            "License Management",
+            "Supervised Machine Learning",
+            "Visual Studio",
+            "WiX installer"
+          ],
+          "capacities": [
+            "Architect",
+            "Developer",
+            "Sales and Training"
+          ]
+        },
+        {
+          "name": "Data Logging",
+          "tools": [
+            "AEGIS",
+            "Brainard MeterMaster",
+            "Circuit Analysis",
+            "Cooling Tower Chemistry",
+            "HOBO",
+            "Transducer Measurement and Control",
+            "TCP/IP",
+            "SMS"
+          ],
+          "capacities": [
+            "Field Engineer"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "EngineLab",
+      "position": "Engineer",
+      "website": "http://www.enginelab.net",
+      "startDate": "2015-07",
+      "endDate": "2015-07",
+      "summary": "Worked with very high-performance engines at the hardware level",
+      "highlights": [
+        "EngineLab produces high-end engine controllers for performance racing",
+        "Worked as a consulting programmer on a dream project"
+      ],
+      "projects": [
+        {
+          "name": "ELC mobile dashboard",
+          "languages": [
+            "C",
+            "C++",
+            "Python"
+          ],
+          "tools": [
+            "Qt5 mobile",
+            "Subversion",
+            "Visual Studio"
+          ],
+          "capacities": [
+            "Programmer"
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Colorado",
+      "area": "Computer Science",
+      "studyType": "Master Student",
+	  "website": "http://cs.colorado.edu",
+      "startDate": "2009-08",
+      "endDate": "2010-12",
+      "gpa": "4.0",
+      "courses": [
+        "Algorithms (upper-level)", "Database Systems 1 and 2 (upper-level)"
+      ]
+    },
+    {
+      "institution": "University of Colorado",
+      "area": "Applied Math | minor: Environmental Biology",
+      "studyType": "Bachelor of Science",
+	  "website": "http://amath.colorado.edu",
+      "startDate": "1998-08",
+      "endDate": "2002-08",
+      "gpa": "Dean's List",
+      "courses": [
+        "Numerical Analysis", "Mathematical Statistics 1 and 2", "Population Dynamics", "Dynamical Systems", "Microbiology"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Network Architect",
+      "level": "Advanced",
+      "keywords": [
+        "Nagios",
+        "nmap",
+        "OpenVPN",
+        "pfsense, FreeBSD and FreeNAS",
+        "Public-key cryptosystems",
+        "stateful firewalls, iptables, pf",
+        "TCP/IP",
+        "Wireshark"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "level": "Advanced",
+      "keywords": [
+        "bash",
+        "C",
+        "C++",
+        "JavaScript ES6",
+        "Python"
+      ]
+    },
+    {
+      "name": "Open-Source Development",
+      "level": "Advanced",
+      "keywords": [
+        "GCC and extensions",
+        "GDB",
+        "git",
+        "GNU",
+        "Linux kernel",
+        "make"
+      ]
+    },
+    {
+      "name": "Data Mining",
+      "level": "Advanced",
+      "keywords": [
+        "Machine Learning",
+        "Expert Systems",
+        "SPSS",
+        "pandas / matplotlib / scipy",
+        "Python",
+        "R"
+      ]
+    },
+    {
+      "name": "Database Administration",
+      "level": "Mixed",
+      "keywords": [
+        "Custom ORM",
+        "SQL",
+        "Mobile Sqlite",
+        "MSSQL",
+        "MySQL",
+        "NoSQL and Document Stores"
+      ]
+    },
+    {
+      "name": "Python internist",
+      "level": "Advanced",
+      "keywords": [
+        "C-API",
+        "JetBrains PyCharm",
+        "multi-platform",
+        "Numerical Python",
+        "numpy"
+      ]
+    },
+    {
+      "name": "Hydrological and Natural Resource Analysis",
+      "level": "Advanced",
+      "keywords": [
+        "Atmospheric Sciences",
+        "Automated Reporting",
+        "Demand Projection",
+        "Monte Carlo Simulation",
+        "Remote Sensing",
+        "Statistical Modeling"
+      ]
+    },
+    { "name": "DevOps",
+      "level": "Mixed",
+      "keywords": [
+        "Virtualization",
+        "AWS S3, EC2, Lambda and Lambda@EDGE",
+        "CoreOS",
+        "Google Cloud Compute, Storage and Domains"
+      ]},
+    { "name": "System Administration",
+      "level": "Master",
+      "keywords": [
+        "apache",
+        "awk",
+        "Debian and Ubuntu, apt",
+        "GnuPG",
+        "Linux",
+        "make",
+        "Nagios",
+        "nmap",
+        "openssl",
+        "OpenVPN",
+        "pfsense, FreeBSD and FreeNAS",
+        "Public-key cryptosystems",
+        "RAID",
+        "Regular expressions",
+        "RHEL, Redhat and Fedora, dnf",
+        "sed",
+        "SSH",
+        "stow",
+        "tripwire",
+        "vi",
+        "Wireshark",
+        "zfs"
+      ] },
+    {
+      "name": "node.js Contributor",
+      "level": "Beginner",
+      "keywords": [
+        "async",
+        "express",
+        "Nuxt",
+        "Vue"
+      ]
+    },
+    {
+      "name": "Visual Studio",
+      "level": "Beginner",
+      "keywords": [
+        "VS2005",
+        "VS2010"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Amateur Radio",
+      "callsign": "N0VUM"
+    },
+    {
+      "name": "Probability Theory"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ]
+}
