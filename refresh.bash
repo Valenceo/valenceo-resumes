@@ -6,7 +6,13 @@ function acl_is_world_readable() {
 }
 
 source config
-for name in $names
+if ! [[ $site ]]
+then
+  site=.
+  echo '$site not set in config. Assuming files are destined to the current directory'
+fi
+
+for name in "${names[@]}"
 do
   dest=${site}
   theme=node_modules/jsonresume-theme-kendall
@@ -19,13 +25,18 @@ do
   then
     echo 'PRINT (html)'
   fi
-  if pandoc ${dest}/${name}/print/index.html -o ${dest}/${name}/${name}.doc
+  if type pandoc
   then
-    echo DOC
+    if pandoc ${dest}/${name}/print/index.html -o ${dest}/${name}/${name}.doc
+    then
+      echo DOC
+    fi
+  else
+    echo Install pandoc to enable document conversion
   fi
 done
 
-read -p "Push to server [YyNn]> "
+read -p "Push to server for site ${site} [YyNn]> "
 case $REPLY in
 	Y|y) echo Pushing to ${site} ;;
 	N|n) exit 0 ;;
