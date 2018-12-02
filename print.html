@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Krystin Villeneuve</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic'
+        rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            main {
+              display: block;
+            }
+            
+            body {
+              font-size: 15px;
+              color: #333;
+              line-height: 1.42857143;
+              background-color: #F0F0F0;
+              margin: 0;
+              padding: 0;
+              font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Calibri', 'sans-serif';
+            }
+            
+            /* Typical page borders are awkward when rendered to PDF. */
+            body.pdf {
+              background-color: #FFFFFF;
+            }
+            
+            /* Adobe or wkhtmltopdf has issues with the <main> tag, so we use <div> for
+            the PDF case, <main> for the HTML case, and style both via an ID. */
+            #main {
+              background-color: #FFF;
+              margin: 10px;
+              padding: 10px;
+              border: 1px solid #E6E6E6;
+            }
+            
+            body.pdf > #main {
+              border: none;
+            }
+            
+            #container > header {
+              padding-top: 6em;
+              padding-bottom: 1em;
+            }
+            
+            body.pdf #container > header {
+              padding: 0;
+            }
+            
+            #main > #container > section {
+              margin-left: 150px;
+              position: relative;
+              display: block;
+            }
+            
+            section > div {
+              margin-bottom: 60px;
+            }
+            
+            span.fa
+            {
+              font-size: 56px;
+              position: absolute;
+              top: 37px;
+              transform: translateY(-50%);
+              left: -100px;
+              color: #1a4367;
+            }
+            
+            hr {
+              margin-top: 20px;
+              margin-bottom: 20px;
+              border: 0;
+              border-top: 1px solid #EEE;
+            }
+            
+            .tenure, .keywords {
+              font-size: 75%;
+            }
+            
+            h1 {
+              margin: 0;
+              font-size: 46px;
+              display: inline-block;
+            }
+            
+            h2 {
+              font-size: 30px;
+              color: #4376a2;
+              text-transform: uppercase;
+              font-weight: normal;
+              padding-top: 20px;
+              margin-bottom: 60px;
+            }
+            
+            h3 {
+              margin-bottom: 0;
+              font-size: 18px;
+            }
+            
+            a, a:visited {
+              color: #428BCA;
+              text-decoration: none;
+              font-weight: bold;
+            }
+            
+            a:hover {
+              text-decoration: underline;
+            }
+            
+            .defunct {
+              color: #989898;
+              font-weight: bold;
+            }
+            
+            #summary {
+              font-size: 150%;
+              margin-left: 0;
+              padding: 20px 0;
+            }
+            
+            #summary > p > strong {
+              font-size: 1.25em;
+            }
+            
+            #contact {
+              float: right;
+            }
+            
+            #summary > header > .fa-info {
+              font-size: 70px;
+              letter-spacing: 5px;
+              text-transform: uppercase;
+              font-weight: normal;
+              top: 50%;
+              left: -85px;
+              transform: translateY(-50%);
+            }
+            
+            #summary h2 {
+              display: none;
+            }
+            
+            
+            .label-keyword {
+              display: inline-block;
+              background: #e8f4ff;
+              color: black;
+              font-size: 0.9em;
+              padding: 5px;
+              border: 1px solid #357ebd;
+              border-radius: 5px;
+              margin-top: 2px;
+              font-weight: bold;
+              text-align: center;
+            }
+            
+            .notes {
+              font-size: 10px;
+              display: block;
+              font-weight: normal;
+              text-transform: uppercase;
+            }
+            
+            .card-skills {
+                position: relative;
+            }
+            .card-nested {
+                min-height: 0;
+                margin-bottom: 10px;
+                border-width: 1px 0 0 0;
+            }
+            .card {
+                background: #FFF;
+                border-radius: 3px;
+                padding: 10px;
+            }
+            
+            .skill-level {
+              border-radius: 3px;
+              position: absolute;
+              top: 10px;
+              bottom: 10px;
+              left: 0;
+              width: 10px;
+              box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+            }
+            .skill-level .skill-progress {
+              position: absolute;
+              border-radius: 3px;
+              bottom: 0;
+              width: 100%;
+              -webkit-transition: height 1s ease;
+            }
+            .skill-level .skill-progress.beginner {
+              height: 50%;
+              background: #e74c3c;
+            }
+            .skill-level .skill-progress.intermediate {
+              height: 70%;
+              background: #f1c40f;
+            }
+            .skill-level .skill-progress.advanced {
+              height: 80%;
+              background: #428bca;
+            }
+            .skill-level .skill-progress.master {
+              height: 95%;
+              background: #5cb85c;
+            }
+            .skill-info {
+              margin-left: 10px;
+            }
+            @media (max-width: 480px) {
+              .skill-info {
+                margin-left: 20px;
+              }
+            }
+            .skill-info > strong {
+              font-weight: 400;
+              font-size: 24px;
+              color: #1d1d1d;
+              line-height: 24px;
+            }
+            
+            .list-unstyled {
+              padding-left: 0;
+              list-style: none;
+            }
+            
+            .card-skills {
+              position: relative;
+            }
+            
+            .space-top {
+                margin-top: 5px;
+            }
+            
+            #container {
+              max-width: 800px;
+              margin: 0 auto;
+            }
+            
+            #elevator-pitch {
+              text-align: center;
+              font-size: 24px;
+              color: #BFC1C3;
+              text-transform: uppercase;
+              font-weight: normal;
+            }
+            
+            .res-label {
+              font-style: italic;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <main id="main">
+            <div id="container">
+                <header>
+                     <h1>Krystin Villeneuve</h1>
+                    <div id="contact">
+                        <div class="email"><a href="mailto:krystinv@gmail.com">krystinv@gmail.com</a>
+                        </div>
+                        <div class="phone">(720) 396-4776</div>
+                        <div class="website"><a href="http://krystinv.com">http://krystinv.com</a>
+                        </div>
+                    </div>
+                </header>
+                <hr>
+                <section id="summary">
+                    <header> <span class="fa fa-lg fa-info"></span> 
+                         <h2>info</h2>
+
+                    </header>With over 15 years of experience in technology, management, and customer
+                    service - I am interested in innovative projects and companies. I learned
+                    to code through a combination of free online resources, in class training,
+                    meetups, and paid apprenticeship. I endeavor to learn and grow in my career
+                    every day.</section>
+                <hr>
+                <section id="skills">
+                    <header>
+                         <h2>Skills</h2>
+                    </header> <span class="fa fa-lg fa-code"></span>
+                    <ul class="list-unstyled">
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="Advanced" data-placement="left">
+                                <div class="skill-progress advanced"></div>
+                            </div>
+                            <div class="skill-info"> <strong>Network Architect</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">Nagios</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">nmap</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">OpenVPN</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">pfsense, FreeBSD and FreeNAS</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Public-key cryptosystems</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">stateful firewalls, iptables, pf</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">TCP/IP</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Wireshark</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="Advanced" data-placement="left">
+                                <div class="skill-progress advanced"></div>
+                            </div>
+                            <div class="skill-info"> <strong>Programming Languages</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">bash</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">C</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">C++</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">JavaScript ES6</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Python</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="Advanced" data-placement="left">
+                                <div class="skill-progress advanced"></div>
+                            </div>
+                            <div class="skill-info"> <strong>Open-Source Development</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">GCC and extensions</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">GDB</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">git</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">GNU</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Linux kernel</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">make</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="Advanced" data-placement="left">
+                                <div class="skill-progress advanced"></div>
+                            </div>
+                            <div class="skill-info"> <strong>Data Mining</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">Machine Learning</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Expert Systems</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">SPSS</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">pandas / matplotlib / scipy</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Python</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">R</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="Mixed" data-placement="left">
+                                <div class="skill-progress mixed"></div>
+                            </div>
+                            <div class="skill-info"> <strong>Database Administration</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">Custom ORM</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">SQL</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Mobile Sqlite</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">MSSQL</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">MySQL</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">NoSQL and Document Stores</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="Advanced" data-placement="left">
+                                <div class="skill-progress advanced"></div>
+                            </div>
+                            <div class="skill-info"> <strong>Python internist</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">C-API</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">JetBrains PyCharm</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">multi-platform</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Numerical Python</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">numpy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="Advanced" data-placement="left">
+                                <div class="skill-progress advanced"></div>
+                            </div>
+                            <div class="skill-info"> <strong>Hydrological and Natural Resource Analysis</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">Atmospheric Sciences</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Automated Reporting</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Demand Projection</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Monte Carlo Simulation</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Remote Sensing</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Statistical Modeling</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="Mixed" data-placement="left">
+                                <div class="skill-progress mixed"></div>
+                            </div>
+                            <div class="skill-info"> <strong>DevOps</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">Virtualization</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">AWS S3, EC2, Lambda and Lambda@EDGE</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">CoreOS</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Google Cloud Compute, Storage and Domains</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="Master" data-placement="left">
+                                <div class="skill-progress master"></div>
+                            </div>
+                            <div class="skill-info"> <strong>System Administration</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">apache</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">awk</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Debian and Ubuntu, apt</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">GnuPG</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Linux</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">make</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Nagios</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">nmap</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">openssl</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">OpenVPN</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">pfsense, FreeBSD and FreeNAS</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Public-key cryptosystems</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">RAID</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Regular expressions</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">RHEL, Redhat and Fedora, dnf</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">sed</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">SSH</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">stow</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">tripwire</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">vi</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Wireshark</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">zfs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="Beginner" data-placement="left">
+                                <div class="skill-progress beginner"></div>
+                            </div>
+                            <div class="skill-info"> <strong>node.js Contributor</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">async</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">express</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Nuxt</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Vue</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="Beginner" data-placement="left">
+                                <div class="skill-progress beginner"></div>
+                            </div>
+                            <div class="skill-info"> <strong>Visual Studio</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">VS2005</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">VS2010</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <hr>
+                <section id="employment">
+                    <header> <span class="fa fa-lg fa-building"></span> 
+                         <h2>employment</h2>
+
+                    </header>
+                    <div>
+                         <h3><em>Consultant</em>,
+
+    <a href="https://www.techtonic.com">Techtonic, Inc.</a>
+
+    </h3> <span class="tenure">2016-03 — Present</span>
+                        <p>
+                            <p>Founder and developer. Provide remote consulting services on analytical,
+                                statistical and crypto backends</p>
+                        </p>
+                        <ul>
+                            <li>Automated cloud-based backup and VPN services.</li>
+                            <li>Moved machine learning categorization and classification, and reporting,
+                                to an API model</li>
+                            <li>Moved disparate legacy datasets into a unified longitudinal database</li>
+                            <li>Modern source control and BI workflow automation across a geographically
+                                remote workforce</li>
+                        </ul>
+                    </div>
+                    <div>
+                         <h3><em>Engineer and VP</em>,
+
+    <a href="http://www.aquacraft.com">Aquacraft, Inc.</a>
+
+    </h3> <span class="tenure">2006-08 — 2015-10</span>
+                        <p>
+                            <p>Brought modern tooling and scaling to a niche startup</p>
+                        </p>
+                        <ul>
+                            <li>Held a key role within the organization as the main database designer
+                                for a company that specializes in statistical modeling within the utility
+                                sector.</li>
+                            <li>Successfully automated data mining algorithms related to report writing
+                                and longitudinal analysis.</li>
+                            <li>Developed a comprehensive understanding of all stages of data acquisition
+                                from hardware to software to the finished product.</li>
+                            <li>Maintained open lines of communication between the client and management,
+                                needed to keep projected on track in terms of schedule.</li>
+                            <li>Effectively scaled the company&#39;s handling of data by 100-times while
+                                lowering the budgets for both hardware and software.</li>
+                            <li>Took the initiative to successfully build out a database and file servers
+                                needed to meet new computing demands.</li>
+                            <li>Leveraged higher math and statistics in a research setting with coworkers
+                                from varied backgrounds.</li>
+                        </ul>
+                    </div>
+                    <div>
+                         <h3><em>Engineer</em>,
+
+    <a href="http://www.enginelab.net">EngineLab</a>
+
+    </h3> <span class="tenure">2015-07</span>
+                        <p>
+                            <p>Worked with very high-performance engines at the hardware level</p>
+                        </p>
+                        <ul>
+                            <li>EngineLab produces high-end engine controllers for performance racing</li>
+                            <li>Worked as a consulting programmer on a dream project</li>
+                        </ul>
+                    </div>
+                </section>
+                <hr>
+                <section id="education">
+                    <header> <span class="fa fa-lg fa-mortar-board"></span> 
+                         <h2>education</h2>
+
+                    </header>
+                    <div>
+                        
+<h3>
+
+<a href="http://cs.colorado.edu">University of Colorado</a>
+
+</h3>
+<span class="tenure">2009-08 — 2010-12</span>| <span class="keywords">Algorithms (upper-level) Database Systems 1 and 2 (upper-level) </span>
+                    </div>
+                    <div>
+                        
+<h3>
+
+<a href="http://amath.colorado.edu">University of Colorado</a>
+
+</h3>
+<span class="tenure">1998-08 — 2002-08</span>| <span class="keywords">Numerical Analysis Mathematical Statistics 1 and 2 Population Dynamics Dynamical Systems Microbiology </span>
+                    </div>
+                </section>
+                <hr>
+                <section id="interests">
+                    <header> <span class="fa fa-lg fa-bicycle"></span> 
+                         <h2>interests</h2>
+
+                    </header>
+                    <div>
+                         <h3><em>Amateur Radio</em></h3>
+ <span class="tenure">Current</span>
+
+                    </div>
+                    <div>
+                         <h3><em>Probability Theory</em></h3>
+ <span class="tenure">Current</span>
+
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+
+</html>
