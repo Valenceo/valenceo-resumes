@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Krystin Villeneuve",
-    "label": "Software Engineer",
+    "label": "Software Developer",
     "picture": "face.jpg",
     "email": "krystinv@gmail.com",
     "phone": "(720) 396-4776",
@@ -97,7 +97,9 @@
             "C#",
             "VB6",
             "WiX"
-          ],
+          ]
+				}
+			]
     },
     {
       "company": "Life Wireless",
@@ -108,13 +110,8 @@
       "summary": "Gave phones to the po",
       "highlights": [
         "blurb.",
-        "blurb.",
-        "blurb.",
-        "blurb.",
-        "blurb.",
-        "blurb.",
         "blurb."
-      ],
+      ]
     }
   ],
   "education": [
@@ -128,7 +125,7 @@
       "name": "Programming Languages",
       "level": "Advanced",
       "keywords": [
-        "Javascript"
+        "Javascript",
         "JavaScript ES6"
       ]
     },
@@ -165,7 +162,7 @@
         "Nuxt",
         "Vue"
       ]
-    },
+    }
   ],
   "interests": [
     {
