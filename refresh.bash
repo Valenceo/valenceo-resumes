@@ -43,11 +43,11 @@ case $REPLY in
 	*) echo Not pushing to ${site} ;;
 esac
 
-if gsutil defacl get gs://resumes.valenceo.com | acl_is_world_readable
+if gsutil defacl get gs://${site} | acl_is_world_readable
 then
   echo ${site} is world-readable, good work
 else
-  echo gsutil acl ch -r -u AllUsers:R gs://${site}
+  gsutil -m acl ch -r -u AllUsers:R gs://${site}
 fi
 
 src=${site}
