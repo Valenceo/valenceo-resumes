@@ -2,6 +2,7 @@ PATH=$PATH:node_modules/.bin
 # If hosting straight out of a bucket, remember to configure:
 #   gsutil web set -im index.html
 # site=resumes.valenceo.com
+site=www.krystinv.com
 
 declare -a names
 for fn in jrs/*.json

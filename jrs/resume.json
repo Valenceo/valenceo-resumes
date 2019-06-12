@@ -1,0 +1,182 @@
+{
+  "basics": {
+    "name": "Krystin Villeneuve",
+    "label": "Full Stack Software Developer",
+    "picture": "myface.png",
+    "email": "krystinv@gmail.com",
+    "phone": "(303) 396-4776",
+    "summary": "Motivated software developer with proven myWorld integration experience. Dedicated consulatant with demonstrable strength building strong relationships with business partners. Team player with strong collaboration skills. Tenacious problem solver with an eclectic skillset and polyglot tendencies.",
+    "location": {
+      "postalCode": "80301",
+      "city": "Boulder",
+      "countryCode": "US",
+      "region": "Colorado"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "krystin987",
+        "url": "https://github.com/krystin987"
+      },
+      {
+        "network": "keybase",
+        "username": "krystinv",
+        "url": "https://keybase.io/krystinv"
+      },
+      {
+        "network": "linkedin",
+        "username": "krystinv",
+        "url": "https://www.linkedin.com/in/krystin-v-a24a6659"
+      }
+    ]
+  },
+  "work": [
+	{
+		"company": "Zayo",
+		"position": "Application Developer",
+		"website": "https://www.zayo.com",
+		"startDate": "2017-01-21",
+		"summary": "Creating business solutions for internal users",
+		"highlights": [
+		  "Develop business applications as SalesForce customizations using Apex, SOQL, including testing",
+				  "Design and create tools to better facilitate users moving from SalesForce Classic to SalesForce Lightning ",
+				  "Assist in onboarding new developers by providing OS specific environment support",
+				  "Participate in peer code review process, assuring best practices are maintained or exceeded"
+			  ]
+	  },
+    {
+      "company": "Techtonic",
+      "position": "Consultant, Software Developer, Team Lead",
+      "website": "https://www.techtonic.com",
+	  "startDate": "2017-07-25",
+	  "endDate": "2016-01-01",
+      "summary": "Mentored new developer apprentices to deliver client solutions",
+      "highlights": [
+        "Integrated myWorld API (GIS library) with SalesForce to produce several different record-specific customized maps for an international infrastructure services company using JavaScript, Apex, and Salesforce Lightning Components",
+				"Created a command line tool with python and xcel wings to automate transformation and loading of 110GB data set from myriad Excel formats into a cohesive  SQLite database",
+        "Built a lightweight prototype in Electron to demonstrate cloud based storage interface potential",
+				"Implemented new features and UI changes in meteorological data application used to model potential disaster recommendation using Knockoutjs, Python, SQLAlchemy for ORM, and Express",
+				"Contributed to company wide effort at Techtonic to relaunch company website with React, GraphQL, and Contentful"
+			]
+    },
+		{
+			"company": "Trilogy Education Services",
+			"position": "Teaching Assistant Substitute",
+			"website": "https://www.trilogyed.com",
+			"startDate": "2018-11-28",
+			"summary": "University of Denver bootcamp (part time, remote)",
+			"highlights": [
+				"Provide in class hands on assistance covering a broad range of web development topics and assisting with classroom management",
+				"Tutor new developers learning HTML/CSS, Bootstrap, Javascript, Express, React, Node, MongoDB, GitHub, Git"
+			]
+		},
+		{
+			"company": "Life Wireless",
+			"position": "Consultant",
+			"website": "https://www.lifewireless.com",
+			"startDate": "2014-09-25",
+			"endDate": "2016-11-01",
+			"summary": "Partnered with local outreach organizations to provide access to modern communications to families in need",
+			"highlights": [
+				"Led a team of over 15 independent distributors in the state of Colorado, increasing target distribution by 4000 units per month",
+				"Formed partnerships with local organizations, such as food banks, to maximize community outreach",
+				"Assisted private business owners in recruiting and training field representatives in California",
+				"Identified successful target areas in Colorado and California, increasing distribution for franchisees by 10-40%"
+			]
+		},
+		{
+			"company": "Experience Previous to Development",
+			"startDate": "2000",
+			"endDate": "2014",
+			"summary": "Combat veteran (avionics repairer, US Army), defense contractor, student"
+		}
+  ],
+  "education": [
+    {
+      "institution": "Randolph College",
+      "area": "Evolutionary Biology",
+			"startDate": "2010-09",
+			"endDate": "2011-5"
+    },
+		{
+      "institution": "Techtonic Academy",
+      "area": "Over 200 hours of study in HTML, CSS, JavaScript, MVC, Ajax, jQuery followed by 1000 hours of paid apprenticeship",
+			"startDate": "2017-07",
+			"endDate": "2017-09"
+    },
+		{
+      "institution": "Free Code Camp",
+      "area": "Over 125 hours including HTML, CSS, Bootstrap, JavaScript, jQuery, and 50 hours of algorithms training problems",
+			"startDate": "2016-09",
+			"endDate": "2017-07"
+    },
+		{
+			"institution": "Turing School of Software and Design",
+			"area": "Over 500 hours of including HTML5, HTML5 Canvas, CSS3, JavaScript, jQuery, Ajax, React, Git, GitHub, pair programming, and TDD (Jasmine and Selenium webdriver)",
+			"startDate": "2016-11",
+			"endDate": "2017-03"
+		}
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": [
+        "JavaScript",
+				"JavaScript ES6",
+				"HTML5",
+				"CSS",
+				"Bash",
+				"Python",
+				"Apex"
+      ]
+    },
+		{
+			"name": "Frameworks/Libraries/etc",
+			"keywords": [
+				"node.js",
+				"myWorld",
+				"React",
+				"Electron",
+				"Bootstrap"
+			]
+		},
+		{
+			"name": "Other Tools",
+			"keywords": [
+				"Linux",
+				"Git",
+				"Electron",
+				"Ajax",
+				"Jasmine",
+				"Selenium",
+				"SQL",
+				"SOQL",
+				"SQLite",
+				"ORM",
+				"noSQL",
+				"AWS/GCP/Cloud SDKs",
+				"SalesForce"
+			]
+		}
+  ],
+  "interests": [
+    {
+      "name": "Aviation",
+      "aircraft": "Cessna 172",
+      "hours": "35+"
+    },
+		{
+			"name": "WebAssembly"
+		}
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+		{
+			"language": "Spanish",
+			"fluency": "Functional"
+		}
+  ]
+}

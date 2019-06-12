@@ -47,8 +47,13 @@ if gsutil defacl get gs://${site} | acl_is_world_readable
 then
   echo ${site} is world-readable, good work
 else
+	echo ${site} is not world-readable, fix it
   gsutil -m acl ch -r -u AllUsers:R gs://${site}
 fi
 
 src=${site}
 gsutil rsync -r ${src} gs://${site}
+
+# gsutil rsync -r www.krystinv.com gs://www.krystinv.com
+
+# this is how i manually update gcp

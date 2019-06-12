@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-    
+
     <head>
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width, user-scalable=no, minimal-ui'>
@@ -27,7 +27,7 @@
             a {
               text-decoration: none;
             }
-            
+
             #resume {
               margin: 0 auto;
               max-width: 600px;
@@ -37,56 +37,61 @@
               box-shadow: 2px 2px 4px #aaa;
               -webkit-box-shadow: 2px 2px 4px #aaa;
             }
-            
+						.page-space	{
+							margin-bottom: 30em;
+						}
+						.second-page {
+							margin-top: 3.5em;
+						}
             .coursesList {
               width: 28%;
               vertical-align: top;
               display: inline-block;
             }
-            
+
             .largeFont {
               font-size: 20px;
             }
-            
+
             .smallFont {
               font-size: 13px;
             }
-            
+
             .sectionBlock {
               display: flex;
               width: 100%;
             }
-            
+
             .sectionName {
               width: 18%;
               vertical-align: top;
               display: inline-block;
             }
-            
+
             .sectionContent {
               width: 80%;
               vertical-align: top;
               display: inline-block;
             }
-            
+
             .sectionContent ul {
               padding-left: 20px;
               margin-top: 6px;
               list-style-type: circle;
             }
-            
+
             .sectionContent .title {
               font-weight: bold;
             }
-            
+
             .sectionContent .date {
               float: right;
             }
-            
+
             .sectionContent .separator {
               height: 14px;
             }
-            
+
             .sectionLine {
               border-style: dashed;
               border-width: 1px;
@@ -94,25 +99,25 @@
               margin-top: 10px;
               margin-bottom: 10px;
             }
-            
+
             .divider {
               font-weight: bold;
               margin-left: 5px;
               margin-right: 5px;
             }
-            
+
             .summary {
               margin-top: 6px;
             }
-            
+
             .skillBlock {
               margin-bottom: 4px;
             }
-            
+
             .jobBlock {
               page-break-inside: avoid;
             }
-            
+
             /* Media Queries */
             @media only screen and (max-width: 40em) {
               body {
@@ -144,7 +149,7 @@
                 font-size: 14px;
               }
             }
-            
+
             @media print {
               body {
                 background: #FFFFFF;
@@ -158,20 +163,20 @@
                 box-shadow: none;
                 -webkit-box-shadow: none;
               }
-            
+
               a {
                 color: black;
               }
             }
         </style>
     </head>
-    
+
     <body>
         <div id='resume'>
             <div id='nameBlock' class='largeFont'> <span class='name'>
       Krystin Villeneuve,
     </span>
- <span class='label'>Software Developer</span>
+ <span class='label'>Full Stack Software Developer</span>
 
             </div>
             <div id='basicsBlock' class='smallFont'>
@@ -179,7 +184,7 @@
  <span class='divider'>|</span>
 
                     <span
-                    class='phone'>(720) 396-4776</span> <span class='divider'>|</span>
+                    class='phone'>(303) 396-4776</span> <span class='divider'>|</span>
  <span class='address'>
           Boulder, Colorado, US
         </span>
@@ -204,7 +209,7 @@
                 <div class='sectionName'> <span>SUMMARY</span>
 
                 </div>
-                <div class='sectionContent'> <span>With over 15 years of experience in technology, management, and customer service - I am interested in innovative projects and companies. I learned to code through a combination of free online resources, in class training, meetups, and paid apprenticeship. I endeavor to learn and grow in my career every day.</span>
+                <div class='sectionContent'> <span>Motivated software developer with over two years of enterprise experience seeking a great team. Dedicated consulatant with demonstrable strength building solid relationships with business partners. Team player with strong collaboration skills. Tenacious problem solver with an eclectic technical skillset and polyglot tendencies.</span>
 
                 </div>
             </div>
@@ -214,29 +219,54 @@
 
                 </div>
                 <div class='sectionContent'>
+									<div class="jobBlock">
+											<div class='blockHeader'> <span class='title'>
+					Techtonic, Inc. - Consultant, Software Developer, Team Lead
+				</span>
+<span class='date'>
+					2017-07-25 &mdash; Present
+				</span>
+
+											</div>
+											<div><a href='https://www.techtonic.com'>https://www.techtonic.com</a>
+											</div>
+											<ul class='highlights'>
+													<li>Mentoring new developer apprentices while delivering client solutions</li>
+													<li>Integrated myWorld API (GIS library) with Salesforce to deliver a proof
+															of concept that resulted in a year long contract with an international
+															infrastructure services company. During that time, several different record-specific
+															customized map concepts were delivered using JavaScript, Apex, and Salesforce
+															Lightning Components</li>
+													<li>Created a command line tool with python and xcel wings to automate transformation
+															and loading of 110GB data set from various Excel formats into a cohesive
+															SQLite database</li>
+													<li>Built a lightweight prototype in Electron to demonstrate cloud based storage
+															interface potential</li>
+													<li>Implemented new features and UI changes in meteorological data application
+															used to model potential disaster recommendation using Knockoutjs, Python,
+															SQLAlchemy for ORM, and Express</li>
+													<li>Contributed to company wide effort at Techtonic to relaunch company website
+															with React, GraphQL, and Contentful</li>
+											</ul>
+											<div class='separator'></div>
+									</div>
                     <div class="jobBlock">
                         <div class='blockHeader'> <span class='title'>
-	          Techtonic, Inc. - Consultant, Software Developer, Team Lead
+	          Trilogy Education Services - Teaching Assistant Substitute
 	        </span>
  <span class='date'>
-	          2017-07-25 &mdash; Present
+	          2018-11-28 &mdash; Present
 	        </span>
 
                         </div>
-                        <div><a href='https://www.techtonic.com'>https://www.techtonic.com</a>
+                        <div><a href='https://www.trilogyed.com'>https://www.trilogyed.com</a>
                         </div>
                         <ul class='highlights'>
-                            <li>Integrated myWorld into SalesForce with record specific customization</li>
-                            <li>As a consultant representing Techtonic for an international communications
-                                infrastructure services company, I acted as staff augmentation to create
-                                record specific, customized integration of myWorld into SalesForce</li>
-                            <li>A need arose for a major data extraction where python was used to get
-                                decades of information from excel to SalesForce</li>
-                            <li>Provided speculative front end effort for potential future cloud based
-                                solutions project</li>
-                            <li>Techtonic trains new developers in an apprenticeship model while acting
-                                as a software consultancy. I provided guidance and mentorship to apprentices
-                                on a daily basis.</li>
+                            <li>University of Denver bootcamp (part time, remote)</li>
+                            <li>Provide in class hands on assistance covering a broad range of web development
+                                topics and assisting with classroom management</li>
+                            <li>Tutor new developers learning HTML/CSS, Bootstrap, Javascript, Express,
+                                React, Node, MongoDB, GitHub, Git</li>
                         </ul>
                         <div class='separator'></div>
                     </div>
@@ -255,14 +285,31 @@
                             <li>Partnered with local outreach organizations to provide access to modern
                                 communications to families in need</li>
                             <li>Led a team of over 15 independent distributors in the state of Colorado,
-                                increasing target distribution by up to 4000 units per month, often the
-                                top performing state nationwide</li>
+                                increasing target distribution by 4000 units per month</li>
                             <li>Formed partnerships with local organizations, such as food banks, to maximize
                                 community outreach</li>
-                            <li>Assisted business owners in recruiting and training field representatives
+                            <li>Assisted private business owners in recruiting and training field representatives
                                 in California</li>
-                            <li>Tdentified successful target areas in Colorado and California, increasing
-                                distribution for franchisees by 10-40%.</li>
+                            <li>Identified successful target areas in Colorado and California, increasing
+                                distribution for franchisees by 10-40%</li>
+                        </ul>
+                        <div class='separator'></div>
+                    </div>
+										<p class="page-space"></p>
+										<br/>
+                    <div class="jobBlock second-page">
+                        <div class='blockHeader'> <span class='title'>
+	          Experience Previous to Development
+	        </span>
+ <span class='date'>
+	          2000 &mdash; 2014
+	        </span>
+
+                        </div>
+                        <div><a href=''></a>
+                        </div>
+                        <ul class='highlights'>
+                            <li>Combat veteran (avionics repairer, US Army), defense contractor, student</li>
                         </ul>
                     </div>
                 </div>
@@ -292,9 +339,8 @@
         </span>
 
                         <div class=''>- Over 500 hours of including HTML5, HTML5 Canvas, CSS3, JavaScript, jQuery,
-                            Ajax, REST, React, CLI in Bash and Os x, Git version control, GitHub, pair
-                            programming, and test driven development including Jasmine and Selenium
-                            webdriver.</div>
+                            Ajax, React, Git, GitHub, pair programming, and TDD (Jasmine and Selenium
+                            webdriver)</div>
                     </div>
                     <div class='separator'></div>
                     <div class='educationBlock'> <span class='title'>
@@ -305,7 +351,7 @@
         </span>
 
                         <div class=''>- Over 125 hours including HTML, CSS, Bootstrap, JavaScript, jQuery, and
-                            50 hours of algorithms.</div>
+                            50 hours of algorithms training problems</div>
                     </div>
                     <div class='separator'></div>
                     <div class='educationBlock'> <span class='title'>
@@ -315,7 +361,7 @@
           2010-09 &mdash; 2011-5
         </span>
 
-                        <div class=''>- Biology</div>
+                        <div class=''>- Evolutionary Biology</div>
                     </div>
                 </div>
             </div>
@@ -325,24 +371,16 @@
 
                 </div>
                 <div class='sectionContent'>
-                    <div class='skillBlock'> <span class='title'>Programming Languages <em>(3 years)</em>:</span>
- <span>Javascript</span>, <span>node.js</span>, <span>HTML5</span>, <span>CSS</span>
+                    <div class='skillBlock'> <span class='title'>Programming Languages:</span>
+ <span>JavaScript</span>, <span>JavaScript ES6</span>, <span>HTML5</span>, <span>CSS</span>, <span>Bash</span>, <span>Python</span>, <span>Rust</span>
 
                     </div>
-                    <div class='skillBlock'> <span class='title'>Programming Languages <em>(2 years)</em>:</span>
- <span>Python</span>, <span>Bash</span>, <span>JavaScript ES6</span>, <span>Rust</span>
+                    <div class='skillBlock'> <span class='title'>Frameworks/Libraries/etc:</span>
+ <span>node.js</span>, <span>myWorld</span>, <span>React</span>, <span>Electron</span>, <span>Bootstrap</span>
 
                     </div>
-                    <div class='skillBlock'> <span class='title'>Programming Languages <em>(1 year)</em>:</span>
- <span>Python</span>, <span>Bash</span>
-
-                    </div>
-                    <div class='skillBlock'> <span class='title'>Frameworks/Libraries <em>(1 year)</em>:</span>
- <span>myWorld</span>, <span>React</span>, <span>Electron</span>
-
-                    </div>
-                    <div class='skillBlock'> <span class='title'>Other &#x27;Nice to haves&#x27; <em>(2 years)</em>:</span>
- <span>Linux</span>, <span>Git</span>, <span>Electron</span>, <span>Ajax</span>
+                    <div class='skillBlock'> <span class='title'>Other Tools:</span>
+ <span>Linux</span>, <span>Git</span>, <span>Electron</span>, <span>Ajax</span>, <span>Jasmine</span>, <span>Selenium</span>, <span>SQL</span>, <span>SQLite</span>, <span>ORM</span>, <span>noSQL</span>, <span>AWS/GCP/Cloud SDKs</span>, <span>SalesForce</span>
 
                     </div>
                 </div>
@@ -354,6 +392,10 @@
                 </div>
                 <div class='sectionContent'> <span class='language'>English</span>
  <span class='fluency'><em>(Native speaker)</em></span>
+ <span>,</span>
+
+                    <span
+                    class='language'>Spanish</span> <span class='fluency'><em>(Functional)</em></span>
 
                 </div>
                 <div class='sectionLine'></div>
@@ -363,6 +405,8 @@
 
                 </div>
                 <div class='sectionContent'> <span class='name'>Aviation</span>
+                    <!-- --><span>, </span>
+ <span class='name'>WebAssembly</span>
                     <!-- -->
                 </div>
                 <div class='sectionLine'></div>
