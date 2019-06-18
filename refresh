@@ -6,7 +6,13 @@ function acl_is_world_readable() {
 }
 
 source config
-for name in $names
+if ! [[ $site ]]
+then
+  site=.
+  echo '$site not set in config. Assuming files are destined to the current directory'
+fi
+
+for name in "${names[@]}"
 do
   dest=${site}
   theme=node_modules/jsonresume-theme-kendall
@@ -19,25 +25,35 @@ do
   then
     echo 'PRINT (html)'
   fi
-  if pandoc ${dest}/${name}/print/index.html -o ${dest}/${name}/${name}.doc
+  if type pandoc
   then
-    echo DOC
+    if pandoc ${dest}/${name}/print/index.html -o ${dest}/${name}/${name}.doc
+    then
+      echo DOC
+    fi
+  else
+    echo Install pandoc to enable document conversion
   fi
 done
 
-read -p "Push to server [YyNn]> "
+read -p "Push to server for site ${site} [YyNn]> "
 case $REPLY in
 	Y|y) echo Pushing to ${site} ;;
 	N|n) exit 0 ;;
 	*) echo Not pushing to ${site} ;;
 esac
 
-if gsutil defacl get gs://resumes.valenceo.com | acl_is_world_readable
+if gsutil defacl get gs://${site} | acl_is_world_readable
 then
   echo ${site} is world-readable, good work
 else
-  echo gsutil acl ch -r -u AllUsers:R gs://${site}
+	echo ${site} is not world-readable, fix it
+  gsutil -m acl ch -r -u AllUsers:R gs://${site}
 fi
 
 src=${site}
 gsutil rsync -r ${src} gs://${site}
+
+# gsutil rsync -r www.krystinv.com gs://www.krystinv.com
+
+# this is how i manually update gcp

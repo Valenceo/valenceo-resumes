@@ -3,4 +3,9 @@ PATH=$PATH:node_modules/.bin
 #   gsutil web set -im index.html
 site=resumes.valenceo.com
 
-names=matt_hayden
+declare -a names
+for fn in jrs/*.json
+do
+	basename="${fn##*/}"
+	names+=( "${basename%.*}" )
+done
