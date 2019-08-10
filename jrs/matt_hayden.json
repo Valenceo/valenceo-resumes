@@ -7,23 +7,18 @@
     "email": "Matt.Hayden@Valenceo.com",
     "phone": "(720) 239-2327",
     "website": "http://resumes.valenceo.com/matt_hayden",
-    "summary": "Educated mathematics and engineering professional with experience providing support for key organizational goals and objectives.  Unique in the ability to combine an educational background in mathematics with engineering best practices and principles to produce results that exceed both internal and external business partner expectations.  Proven strength building strong relationships with business partners, based on open lines of communication and used to draw alignment with key programming initiatives.  Able to take obtained data and enhance its usability.  Recognized for the ability to deliver strong results working in fast-paced, dynamic work environments.",
+    "summary": "I work on distributed systems using interpreted languages.  I used to work on centralized systems using compiled languages.  I can likely improve on your problem, and I can definitely automate the solution.  Compared to others, I am: Educated mathematics and engineering professional with experience providing support for key organizational goals and objectives.  Unique in the ability to combine an educational background in mathematics with engineering best practices and principles to produce results that exceed both internal and external business partner expectations.  Proven strength building strong relationships with business partners, based on open lines of communication and used to draw alignment with key programming initiatives.  Able to take obtained data and enhance its usability.  Recognized for the ability to deliver strong results working in fast-paced, dynamic work environments.",
     "location": {
       "postalCode": "80302",
       "city": "Boulder",
-      "countryCode": "US",
-      "region": "Colorado"
+      "region": "Colorado",
+      "countryCode": "US"
     },
     "profiles": [
       {
         "network": "github",
         "username": "matt-hayden",
         "url": "https://github.com/matt-hayden"
-      },
-      {
-        "network": "gitter.im",
-        "username": "matt-hayden",
-        "url": "https://gitter.im/Valenceo/Lobby"
       },
       {
         "network": "keybase",
@@ -34,15 +29,33 @@
         "network": "linkedin",
         "username": "matt-hayden",
         "url": "https://linkedin.com/in/matt-hayden"
+      },
+      {
+        "network": "Frequently found on:",
+        "username": "Hacker News, lobste.rs, and sites with Raymond Hettinger and Guido von Rossum"
       }
     ]
   },
   "work": [
     {
+      "company": "Innolitics, LTD.",
+      "position": "Senior Engineer",
+      "website": "https://www.innolitics.com",
+      "startDate": "2018-06-13",
+      "summary": "Systems programmer for Mobius",
+      "highlights": [
+        "Numerical programmer, medical imaging and registration",
+        "Added OS and networking features",
+        "Automated build and test infrastructure for a highly regulated product",
+        "Very effective / 100% remote"
+      ]
+    },
+    {
       "company": "Valenceo, LTD.",
       "position": "Consultant",
       "website": "https://www.valenceo.com",
-      "startDate": "2016-03-30",
+      "startDate": "2015-03-30",
+      "endDate": "2018-06-13",
       "summary": "Founder and developer. Provide remote consulting services on analytical, statistical and crypto backends",
       "highlights": [
         "Automated cloud-based backup and VPN services.",
@@ -232,6 +245,7 @@
       "keywords": [
         "Nagios",
         "nmap",
+        "NFS, Samba",
         "OpenVPN",
         "pfsense, FreeBSD and FreeNAS",
         "Public-key cryptosystems",
@@ -252,15 +266,17 @@
       ]
     },
     {
-      "name": "Open-Source Development",
+      "name": "Automating Open-Source Development",
       "level": "Advanced",
       "keywords": [
+        "Debian and Ubuntu, apt, packaging and maintenance",
         "GCC and extensions",
         "GDB",
-        "git",
-        "GNU",
-        "Linux kernel",
-        "make"
+        "git & subversion",
+        "GNU ecosystem",
+        "Infrastructure as code, e.g. Ansible & Puppet",
+        "Linux kernel internals",
+        "make & Invoke, add-ons like Ninja"
       ]
     },
     {
@@ -272,14 +288,15 @@
         "SPSS",
         "pandas / matplotlib / scipy",
         "Python",
-        "R"
+        "R",
+        "Strong background in inferential statistics"
       ]
     },
     {
       "name": "Database Administration",
       "level": "Mixed",
       "keywords": [
-        "Custom ORM",
+        "CouchDB",
         "SQL",
         "Mobile Sqlite",
         "MSSQL",
@@ -291,11 +308,13 @@
       "name": "Python internist",
       "level": "Advanced",
       "keywords": [
-        "C-API",
+        "C-API, ctypes, numpy C-API",
+        "DB-API, abstraction layers",
         "JetBrains PyCharm",
         "multi-platform",
         "Numerical Python",
-        "numpy"
+        "numpy",
+        "pytest and jUnit"
       ]
     },
     {
@@ -311,36 +330,32 @@
       ]
     },
     { "name": "DevOps",
-      "level": "Mixed",
+      "level": "Advanced",
       "keywords": [
-        "Virtualization",
-        "AWS S3, EC2, Lambda and Lambda@EDGE",
-        "CoreOS",
+        "Automating Microsoft TFS (VSTS)",
+        "Jenkins 2",
+        "Virtualization, LXD, Microsoft Hyper-V",
         "Google Cloud Compute, Storage and Domains"
       ]},
-    { "name": "System Administration",
+    { "name": "Automating System Administration",
       "level": "Master",
       "keywords": [
         "apache",
-        "awk",
-        "Debian and Ubuntu, apt",
+        "awk & sed, command-line expert",
         "GnuPG",
+        "IPsec, OpenVPN",
         "Linux",
-        "make",
-        "Nagios",
         "nmap",
-        "openssl",
-        "OpenVPN",
+        "OpenSSL 0.9.8+",
         "pfsense, FreeBSD and FreeNAS",
         "Public-key cryptosystems",
         "RAID",
-        "Regular expressions",
+        "regex (Regular expressions)",
         "RHEL, Redhat and Fedora, dnf",
-        "sed",
-        "SSH",
+        "SSH, Fabric and Paramiko",
         "stow",
         "tripwire",
-        "vi",
+        "vi, vim, etc.",
         "Wireshark",
         "zfs"
       ] },
