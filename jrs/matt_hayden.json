@@ -42,12 +42,25 @@
       "position": "Senior Engineer",
       "website": "https://www.innolitics.com",
       "startDate": "2018-06-13",
-      "summary": "Systems programmer for Mobius",
+      "summary": "Medical imaging algorithms and systems",
       "highlights": [
         "Numerical programmer, medical imaging and registration",
-        "Added OS and networking features",
-        "Automated build and test infrastructure for a highly regulated product",
+	"Regulatory tooling",
+        "Automation for OS, networking, and deployment",
+        "Automated build and test infrastructure",
         "Very effective / 100% remote"
+      ]
+    },
+    {
+      "company": "Varian Medical Devices",
+      "position": "Systems Programmer (contract)",
+      "website": "https://www.varian.com/products/software/quality-assurance/mobius3d",
+      "startDate": "2018-06-13",
+      "summary": "Systems programmer for Mobius3D",
+      "highlights": [
+        "Ubuntu-based on-prem 3D processing product",
+        "Combined Linux and Windows tooling with Jenkins and Microsoft TFS",
+        "Acquired as a Linux-based startup, Mobius was migrated to be managed within a larger, Microsoft-based organization"
       ]
     },
     {
