@@ -1,0 +1,24 @@
+#! /usr/bin/env bash
+set -e
+
+
+function acl_is_world_readable() {
+  jq -e '.[]? | select(.entity=="allUsers") | select(.role=="READER") | any'
+}
+
+source config
+
+
+if gsutil defacl get gs://${site} | acl_is_world_readable
+then
+  echo ${site} is world-readable, good work
+else
+  echo ${site} is not world-readable, trying to fix
+  gsutil -m acl ch -r -u AllUsers:R gs://${site}
+fi
+
+src=${site}
+gsutil rsync "$@" -r ${src} gs://${site}
+
+# For example,
+# gsutil rsync -r www.krystinv.com gs://www.krystinv.com

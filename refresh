@@ -3,11 +3,9 @@ set -e
 
 type nodejs
 
-function acl_is_world_readable() {
-  jq -e '.[]? | select(.entity=="allUsers") | select(.role=="READER") | any'
-}
 
 source config
+
 if ! [[ $site ]]
 then
   site=.
@@ -26,36 +24,16 @@ do
   if hackmyresume BUILD jrs/${name}.json TO ${dest}/${name}/print/index.html --theme ${theme}
   then
     echo 'PRINT (html)'
-  fi
-  if type pandoc
-  then
-    if pandoc ${dest}/${name}/print/index.html -o ${dest}/${name}/${name}.doc
-    then
-      echo DOC
-    fi
-  else
-    echo Install pandoc to enable document conversion
+    make -B ${dest}/${name}/${name}.docx
   fi
 done
 
 read -p "Push to server for site ${site} [YyNn]> "
 case $REPLY in
-	Y|y) echo Pushing to ${site} ;;
+	Y|y)
+	  echo Pushing to ${site}
+	  ./push
+	  ;;
 	N|n) exit 0 ;;
 	*) echo Not pushing to ${site} ;;
 esac
-
-if gsutil defacl get gs://${site} | acl_is_world_readable
-then
-  echo ${site} is world-readable, good work
-else
-	echo ${site} is not world-readable, fix it
-  gsutil -m acl ch -r -u AllUsers:R gs://${site}
-fi
-
-src=${site}
-gsutil rsync -r ${src} gs://${site}
-
-# gsutil rsync -r www.krystinv.com gs://www.krystinv.com
-
-# this is how i manually update gcp
