@@ -1,6 +1,8 @@
 #! /usr/bin/env bash
 set -e
 
+type nodejs
+
 function acl_is_world_readable() {
   jq -e '.[]? | select(.entity=="allUsers") | select(.role=="READER") | any'
 }
